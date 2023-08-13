@@ -1,0 +1,19 @@
+<%= form_tag(blog_posts_path, method: :get, class: "search-form") do %>
+    <div class="form-group">
+      <%= label_tag(:title, "Title:") %>
+      <%= text_field_tag(:title, params[:title], class: "form-control", placeholder: "Enter title") %>
+    </div>
+    
+    <div class="form-group">
+      <%= label_tag(:body, "Body:") %>
+      <%= text_field_tag(:body, params[:body], class: "form-control", placeholder: "Enter body text") %>
+    </div>
+    
+    <div class="form-group">
+      <%= label_tag(:meta, "Meta:") %>
+      <%= text_field_tag(:meta, params[:meta], class: "form-control", placeholder: "Enter meta information") %>
+    </div>
+    
+    <%= submit_tag("Search", class: "btn btn-primary") %>
+  <% end %>
+  

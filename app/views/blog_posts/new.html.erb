@@ -1,0 +1,19 @@
+<%= form_for @blog_post do |f| %>
+    <div class="field">
+      <%= f.label :title %>
+      <%= f.text_field :title, class: "form-control" %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :body %>
+      <%= f.text_area :body, class: "form-control", rows: 6 %>
+    </div>
+  
+    <div class="field">
+      <%= f.label :meta %>
+      <%= f.text_area :meta, class: "form-control", rows: 3 %>
+    </div>
+  
+    <%= f.submit "Create Blog Post", class: "btn btn-primary" %>
+  <% end %>
+  
