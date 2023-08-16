@@ -11,7 +11,7 @@ class PromptsController < ApplicationController
 
   # GET /prompts/1 or /prompts/1.json
   def show
-    @comment = @post.comments.build
+    @comment = @post.comments
   end
 
   # GET /prompts/new
